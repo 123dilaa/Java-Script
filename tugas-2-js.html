@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pegawai</title>
+</head>
+<body>
+    <h3 style="color: aqua;">Data Gaji Pegawai</h3>
+    <script>
+        let nama = "Budi Sontoso";
+        let umur = "25";
+        let jabatan = "Manajer";
+        let status = "Menikah";
+        let gapok = "";
+
+        // menentukan gaji pokok
+        if(jabatan == "Manajer"){
+            gapok = 15000000;
+        }
+        else if(jabatan == "Asisten Manajer"){
+            gapok = 10000000;
+        }
+        else{
+            gapok = 5000000;
+        }
+
+        //tunjangan jabatan
+        let tunjanganJabatan = 0.15 * gapok;
+
+        //BPJS
+        let bpjs = 0.10 * gapok;
+
+        // tunjangan keluarga 
+        let tunjanganKeluarga = (status == "Menikah") ? 0.20 * gapok :0;
+
+        //total gaji
+        let totalGaji = gapok +  tunjanganJabatan + bpjs + tunjanganKeluarga;
+        document.write("<table border = '1' cellpadding='10'>");
+
+        // cetak menggunakan thead
+        document.write("<thead>");
+        document.write("<tr>");
+        document.write("<th>Nama Pegawai</th>");
+        document.write("<th>Umur</th>");
+        document.write("<th>Jabatan</th>");
+        document.write("<th>Status</th>");
+        document.write("<th>Gaji Pokok</th>");
+        document.write("<th>Tunjangan Jabatan</th>");
+        document.write("<th>BPJS</th>");
+        document.write("<th>Tunjangan Keluarga</th>");
+        document.write("</tr>");
+        document.write("</thead>");
+
+        //  membuat kolom
+        document.write("<tbody>");
+        document.write("<tr>");
+        document.write("<td>"+nama+"</td>");
+        document.write("<td>"+umur+"</td>");
+        document.write("<td>"+jabatan+"</td>");
+        document.write("<td>"+status+"</td>");
+        document.write("<td>"+gapok+"</td>");
+        document.write("<td>"+tunjanganJabatan+"</td>");
+        document.write("<td>"+bpjs+"</td>");
+        document.write("<td>"+tunjanganKeluarga+"</td>");
+        document.write("</tr>");
+        document.write("</tbody>");
+
+        //disini footer
+        document.write("<tfoot>");
+        document.write("<tr>");
+        document.write("<th colspan='7'>Total Gaji</th>");
+        document.write("<th>"+totalGaji+"</th>");
+        document.write("</tr>");
+        document.write("</tfoot>");
+
+        document.write("</table>");
+        </script>
+</body>
+</html>

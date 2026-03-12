@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Bangunan Datar</title>
+</head>
+<body>
+    <h2>Perhitungan Bangunan Datar</h2>
+
+    <!-- Kode Javasript -->
+    <script>
+        // membuat variabel 
+        let sisi =6;
+        let panjang=10;
+        let lebar= 5;
+        let alas=8;
+        let tinggi=4;
+
+        // menghitung luas persegi
+        //rumus =  sisi x sisi
+        let luasPersegi = sisi * sisi;
+
+        // menghitung keliling persegi
+        // rumus = 4 x sisi
+        let kelilingPersegi = 4 * sisi;
+
+        // menghitung luas persegi panjang
+        // rumus = panjang x lebar
+        let luasPersegiPanjang = panjang * lebar;
+
+        // menghitung luas segitiga
+        // rumus = 1/2 x alas x tinggi
+        let luassegitiga = 0.5 * alas * tinggi;
+
+        // Rumus
+        document.write("<hr>");
+        document.write("<h2>Rumus Bangun Datar</h2>");
+        document.write("<hr>");
+
+        // Persegi
+        document.write("<h3>Persegi</h3>");
+        document.write("<ul>");
+        document.write("<li>Luas = sisi x sisi</li>");
+        document.write("<li>Keliling = 4 x sisi</li>");
+        document.write("</ul>");
+
+        // Persegi Panjang
+        document.write("<h3>Persegi Panjang</h3>");
+        document.write("<ul>");
+        document.write("<li>Luas = panjang x lebar</li>");
+        document.write("</ul>");
+
+        // Segitiga
+        document.write("<h3>Segitiga</h3>");
+        document.write("<ul>");
+        document.write("<li>Luas = 1/2 x alas x tinggi</li>");
+        document.write("</ul>");
+
+        //Diketahui variabel
+        document.write("<hr>");
+        document.write("<h2> Diketahui Nilai Variabel </h2>")
+        document.write("<hr>");
+        document.write("sisi = ", + sisi);
+        document.write("<br>");
+        document.write("Panjang = ", panjang);
+        document.write("<br>");
+        document.write("Lebar = ", lebar);
+        document.write("<br>");
+        document.write("Alas = ", alas);
+        document.write("<br>");
+        document.write("Tinggi = ", tinggi);
+        document.write("<br>");
+
+        //menampilkan hasil perhitungan
+        document.write("<hr>");
+        document.write("<h2> Hasil Perhitungan bangunan Datar </h2>");
+        document.write("<hr>");
+        document.write("Luas Persegi = ", luasPersegi);
+        document.write("<br>");
+        document.write("Keliling persegi = ", kelilingPersegi);
+        document.write("<br>");
+        document.write("Luas persegi panjang = ", luasPersegiPanjang);
+        document.write("<br>");
+        document.write("Luas segitiga = ", luassegitiga);
+
+        //menampilkan hasil perhitungan
+        console.log("Luas persegi = ", luasPersegi);
+        console.log("Keliling persegi = ", kelilingPersegi);
+        console.log("Luas persegi Panjang = ", luasPersegiPanjang);
+        console.log("Luas Segitiga = ", luassegitiga);
+    </script>
+</body>
+</html>
